@@ -1,5 +1,7 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
+
+import { UserPhoto } from "../UserPhoto";
 
 import { styles } from "./styles";
 
@@ -9,7 +11,14 @@ export function Header() {
   return (
     <View style={styles.container}>
       <LogoSvg />
-      <Text>Sair</Text>
+
+      <View style={styles.logouButton}>
+        <TouchableOpacity>
+          <Text style={styles.logoutText}>Sair</Text>
+        </TouchableOpacity>
+
+        <UserPhoto imageUri="https://github.com/moisesnetouou.png" />
+      </View>
     </View>
   );
 }
