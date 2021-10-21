@@ -3,6 +3,7 @@
     "name": "nlw-heat-native",
     "slug": "nlw-heat-native",
     "version": "1.0.0",
+    "scheme": "nlw-heat-native",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
